@@ -4,3 +4,6 @@
 [submodule "ansible/roles/reboot"]
 	path = ansible/roles/reboot
 	url = https://github.com/johanneskastl/ansible-role-reboot.git
+[submodule "ansible/roles/minimal_bashrc"]
+	path = ansible/roles/minimal_bashrc
+	url = https://github.com/johanneskastl/ansible-role-minimal_bashrc.git
