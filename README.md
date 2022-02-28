@@ -47,4 +47,5 @@ Then add the additional hostnames to the list:
 You can remove your vagrant VMs using `vagrant destroy`, but you need to manually remove the following files before starting again:
 ```bash
 ansible/rke2-kubeconfig
+ansible/rke2-token
 ```
