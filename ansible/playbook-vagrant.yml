@@ -1,0 +1,13 @@
+---
+- name: 'Configure the node'
+  hosts: 'all'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'minimal_bashrc'
+      vars:
+        additional_users: "{{ ansible_user }}"
+    - role: 'create_a_vimrc'
+      vars:
+        additional_users: "{{ ansible_user }}"
