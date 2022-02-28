@@ -26,6 +26,7 @@ In case you want or need to change the VM sizing, change the following lines in 
 ## Increasing or decreasing the number of nodes
 
 In case you want to decrease the number of nodes: Don't. Use [this Vagrant setup](https://github.com/johanneskastl/rke2_singlenode_with_vagrant_libvirt) instead.
+The reason is that etcd needs a quorum, i.e. if one node fails the others are still able to make a decision. With three servers it works, but not with two. So the only smaller number of server nodes is one, hence: use the other setup...
 
 In case you want to increase the number of nodes, you need to adjust two lines in the `Vagrantfile`:
 
